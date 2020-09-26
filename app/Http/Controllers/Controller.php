@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Condominios;
+use App\Blocos;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;

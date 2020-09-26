@@ -15,6 +15,7 @@ class CreateBlocoTable extends Migration
     {
         Schema::create('bloco', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('cond');
             $table->string('numero');
             $table->integer('quantidade_ap');
             $table->rememberToken();

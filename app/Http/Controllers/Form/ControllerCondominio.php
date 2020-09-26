@@ -48,7 +48,8 @@ class ControllerCondominio extends Controller
 
     public function formEditCondominios(Condominios $condominio)
     {
-        return view('editCondominio', [
+        $condominio->delete();
+        return view('editCondominios', [
             'condominio' => $condominio
         ]);
     }
