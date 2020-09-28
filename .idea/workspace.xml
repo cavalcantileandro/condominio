@@ -22,15 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f3bf3f-c4da-4080-92a2-cf9719e49898" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Blocos.php" afterDir="false" />
+    <list default="true" id="40f3bf3f-c4da-4080-92a2-cf9719e49898" name="Default Changelist" comment="v1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Condominios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Condominios.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Form/ControllerCondominio.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Form/ControllerCondominio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_bloco_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_bloco_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addCondominios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addCondominios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/listAllCondominios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listAllCondominios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +204,7 @@
       <workItem from="1601081360291" duration="301000" />
       <workItem from="1601100022797" duration="3423000" />
       <workItem from="1601139686303" duration="6147000" />
-      <workItem from="1601228953959" duration="16438000" />
+      <workItem from="1601228953959" duration="17994000" />
     </task>
     <task id="LOCAL-00001" summary="editar ok&#10;iniciei a criar as rotas de blocos">
       <created>1601103036117</created>
@@ -219,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601103036117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.0">
+      <created>1601272504546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601272504546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +252,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="editar ok" />
     <MESSAGE value="editar ok&#10;iniciei a criar as rotas de blocos" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="387" y="226" key="#Notifications" timestamp="1601103375470">
@@ -274,10 +276,10 @@
       <screen x="0" y="23" width="1366" height="745" />
     </state>
     <state x="436" y="128" key="NewPhpClassDialog/0.23.1366.745@0.23.1366.745" timestamp="1601238555178" />
-    <state x="283" y="135" key="Vcs.Push.Dialog.v2" timestamp="1601272297428">
+    <state x="283" y="135" key="Vcs.Push.Dialog.v2" timestamp="1601272516989">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
-    <state x="283" y="135" key="Vcs.Push.Dialog.v2/0.23.1366.745@0.23.1366.745" timestamp="1601272297428" />
+    <state x="283" y="135" key="Vcs.Push.Dialog.v2/0.23.1366.745@0.23.1366.745" timestamp="1601272516989" />
     <state x="475" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601103130365">
       <screen x="0" y="23" width="1366" height="745" />
     </state>

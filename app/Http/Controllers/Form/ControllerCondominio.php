@@ -15,6 +15,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+
 class ControllerCondominio extends Controller
 {
 
@@ -43,18 +44,6 @@ class ControllerCondominio extends Controller
 
     public function storeCondominios(Request $request)
     {
-
-        /*$validator = Validator::make($request->all(), [
-            'blocks' => 'required'
-        ]);
-
-        if($validator->fails()){
-            return [
-                'message' => 'Error',
-                $validator->errors()
-           ];
-        }
-        else{*/
             $condominio = new Condominios();
             $condominio->nome = $request->nome;
             $condominio->email = $request->email;
@@ -69,7 +58,6 @@ class ControllerCondominio extends Controller
             }
 
             return redirect()->route('condominios.listAll');
-        //}
 
     }
 
