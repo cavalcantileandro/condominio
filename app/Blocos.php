@@ -3,16 +3,15 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\Condominio as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 
-class Condominios extends Authenticatable
+class Blocos extends Authenticatable
 {
     use Notifiable;
     use SoftDeletes;
-    protected $table = "condominios";
+    protected $table = "blocos";
 
     /**
      * The attributes that are mass assignable.
@@ -20,7 +19,7 @@ class Condominios extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nome', 'email', 'numero', 'quantidade_ap'
+        'cond', 'numero', 'quantidade_ap',
     ];
 
     /**
@@ -41,8 +40,8 @@ class Condominios extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function blocos()
+    public function condominio()
     {
-        return $this->hasMany("App\Blocos");
+        return $this->belongsTo("App\Condominios");
     }
 }

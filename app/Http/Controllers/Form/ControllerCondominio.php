@@ -3,21 +3,26 @@
 namespace App\Http\Controllers;
 namespace App\Http\Controllers\Form;
 
+use App\Blocos;
 use App\Condominios;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
 
 class ControllerCondominio extends Controller
 {
 
     public function ListAllCondominios()
     {
-        $condominios = Condominios::all();
+        $condominios = Condominios::with([
+            "blocos"
+        ])->get();
 
         return view('listAllCondominios', [
             'condominios' => $condominios
@@ -38,12 +43,34 @@ class ControllerCondominio extends Controller
 
     public function storeCondominios(Request $request)
     {
-        $condominio = new Condominios();
-        $condominio->nome = $request->nome;
-        $condominio->email = $request->email;
-        $condominio->save();
 
-        return redirect()->route('condominios.listAll');
+        /*$validator = Validator::make($request->all(), [
+            'blocks' => 'required'
+        ]);
+
+        if($validator->fails()){
+            return [
+                'message' => 'Error',
+                $validator->errors()
+           ];
+        }
+        else{*/
+            $condominio = new Condominios();
+            $condominio->nome = $request->nome;
+            $condominio->email = $request->email;
+            $condominio->save();
+
+            for ($i = 0; $i < $request->numero; $i++) {
+                $bloco = new Blocos();
+                $bloco->numero = $i+1;
+                $bloco->quantidade_ap = $request->quantidade_ap;
+                $bloco->condominios_id = $condominio->id;
+                $bloco->save();
+            }
+
+            return redirect()->route('condominios.listAll');
+        //}
+
     }
 
     public function formEditCondominios(Condominios $condominio)

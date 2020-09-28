@@ -22,12 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f3bf3f-c4da-4080-92a2-cf9719e49898" name="Default Changelist" comment="editar ok">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="40f3bf3f-c4da-4080-92a2-cf9719e49898" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Blocos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Condominios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Condominios.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Form/ControllerCondominio.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Form/ControllerCondominio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_bloco_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_bloco_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/addCondominios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addCondominios.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/listAllCondominios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listAllCondominios.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +151,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,15 +163,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Form" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Form" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Form" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,8 +208,18 @@
       <workItem from="1601076402295" duration="196000" />
       <workItem from="1601080742989" duration="382000" />
       <workItem from="1601081360291" duration="301000" />
-      <workItem from="1601100022797" duration="2991000" />
+      <workItem from="1601100022797" duration="3423000" />
+      <workItem from="1601139686303" duration="6147000" />
+      <workItem from="1601228953959" duration="16438000" />
     </task>
+    <task id="LOCAL-00001" summary="editar ok&#10;iniciei a criar as rotas de blocos">
+      <created>1601103036117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601103036117</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,13 +245,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="editar ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="editar ok" />
+    <MESSAGE value="editar ok&#10;iniciei a criar as rotas de blocos" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="387" y="226" key="#Notifications" timestamp="1601103375470">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="387" y="226" key="#Notifications/0.23.1366.745@0.23.1366.745" timestamp="1601103375470" />
     <state x="349" y="204" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600925997390">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
@@ -248,17 +266,25 @@
       <screen x="0" y="23" width="1366" height="745" />
     </state>
     <state x="383" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1366.745@0.23.1366.745" timestamp="1600912372745" />
-    <state x="436" y="128" key="NewPhpClassDialog" timestamp="1600919859264">
+    <state x="421" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601140492003">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
-    <state x="436" y="128" key="NewPhpClassDialog/0.23.1366.745@0.23.1366.745" timestamp="1600919859264" />
-    <state x="283" y="135" key="Vcs.Push.Dialog.v2" timestamp="1601102875175">
+    <state x="421" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1366.745@0.23.1366.745" timestamp="1601140492003" />
+    <state x="436" y="128" key="NewPhpClassDialog" timestamp="1601238555178">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
-    <state x="283" y="135" key="Vcs.Push.Dialog.v2/0.23.1366.745@0.23.1366.745" timestamp="1601102875175" />
-    <state x="375" y="28" width="615" height="735" key="find.popup" timestamp="1601081230684">
+    <state x="436" y="128" key="NewPhpClassDialog/0.23.1366.745@0.23.1366.745" timestamp="1601238555178" />
+    <state x="283" y="135" key="Vcs.Push.Dialog.v2" timestamp="1601272297428">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
-    <state x="375" y="28" width="615" height="735" key="find.popup/0.23.1366.745@0.23.1366.745" timestamp="1601081230684" />
+    <state x="283" y="135" key="Vcs.Push.Dialog.v2/0.23.1366.745@0.23.1366.745" timestamp="1601272297428" />
+    <state x="475" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601103130365">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="475" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1366.745@0.23.1366.745" timestamp="1601103130365" />
+    <state x="375" y="28" width="615" height="735" key="find.popup" timestamp="1601261684321">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="375" y="28" width="615" height="735" key="find.popup/0.23.1366.745@0.23.1366.745" timestamp="1601261684321" />
   </component>
 </project>

@@ -9,20 +9,46 @@
 </head>
 <body>
 
-<table>
+<table style="border: 1px solid black;">
 
     <tr>
         <td>#ID</td>
         <td>Nome:</td>
         <td>E-mail:</td>
+        <td>Número de Blocos:</td>
+        <td>Blocos</td>
         <td>Ações:</td>
     </tr>
 
     @foreach($condominios as $condominio)
+
         <tr>
             <td>{{ $condominio->id }}</td>
             <td>{{ $condominio->nome }}</td>
             <td>{{ $condominio->email }}</td>
+            <td>{{ count($condominio->blocos)}}</td>
+            <td>
+
+             <table style="border: 1px solid black;">
+
+                 <tr>
+                     <td>Numero do Bloco</td>
+                     <td>Quantidade de Apartamentos</td>
+                 </tr>
+
+                 @foreach($condominio->blocos as $bloco)
+
+                     <tr>
+
+                         <td>{{ $bloco->numero }}</td>
+                         <td>{{ $bloco->quantidade_ap }}</td>
+
+                     </tr>
+
+                 @endforeach
+             </table>
+
+            </td>
             <td>
                 <a href="">Ver Condomínio</a>
                 <form action="{{ route('condominio.destroy', ['condominio' => $condominio->id]) }}" method="post">
@@ -33,6 +59,7 @@
                 </form>
             </td>
         </tr>
+
     @endforeach
 </table>
 

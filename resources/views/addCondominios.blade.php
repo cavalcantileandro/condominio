@@ -17,6 +17,12 @@
     <label for="">E-mail do Condomínio:</label>
     <input type="email" name="email">
 
+    <label for="">Quantidade de Blocos:</label>
+    <input type="text" name="numero">
+
+    <label for="">Quantidade de Apartamentos:</label>
+    <input type="text" name="quantidade_ap">
+
     <input type="submit" value="Cadastrar Condomínio">
 </form>
 
