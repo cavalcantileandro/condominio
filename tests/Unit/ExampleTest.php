@@ -14,6 +14,13 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
+
+        $data = ['nome' => "abccc", 'email' => "abbb@aaa.com", 'numero' => 2, 'quantidade_ap' => 3];
+
+        $response = $this->post('/condominio/store', $data);
+
+        $this->assertNotEmpty($response);
+
+        //$this->assertTrue(true);
     }
 }

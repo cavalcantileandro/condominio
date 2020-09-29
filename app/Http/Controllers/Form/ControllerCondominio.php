@@ -5,15 +5,10 @@ namespace App\Http\Controllers\Form;
 
 use App\Blocos;
 use App\Condominios;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\ValidationServiceProvider;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Requests\RequestCondominio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
 
 
 class ControllerCondominio extends Controller
@@ -42,23 +37,35 @@ class ControllerCondominio extends Controller
         return view('addCondominios');
     }
 
-    public function storeCondominios(Request $request)
+    public function storeCondominios(RequestCondominio $request)
     {
-            $condominio = new Condominios();
-            $condominio->nome = $request->nome;
-            $condominio->email = $request->email;
-            $condominio->save();
+            /*$data = $request->all();
+            $validator = Validator::make($data, [
+                'numero' => 'required',
+                'quantidade_ap' => 'required'
+            ]);
 
-            for ($i = 0; $i < $request->numero; $i++) {
-                $bloco = new Blocos();
-                $bloco->numero = $i+1;
-                $bloco->quantidade_ap = $request->quantidade_ap;
-                $bloco->condominios_id = $condominio->id;
-                $bloco->save();
-            }
+            if ($validator->fails()) {
+                return [
+                    'message' => 'Error',
+                    $validator->errors()
+                ];
+            } else {*/
+                $condominio = new Condominios();
+                $condominio->nome = $request->nome;
+                $condominio->email = $request->email;
+                $condominio->save();
 
-            return redirect()->route('condominios.listAll');
+                for ($i = 0; $i < $request->numero; $i++) {
+                    $bloco = new Blocos();
+                    $bloco->numero = $i + 1;
+                    $bloco->quantidade_ap = $request->quantidade_ap;
+                    $bloco->condominios_id = $condominio->id;
+                    $bloco->save();
+                }
 
+                return redirect()->route('condominios.listAll');
+            //}
     }
 
     public function formEditCondominios(Condominios $condominio)
